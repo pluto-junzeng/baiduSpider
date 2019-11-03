@@ -17,6 +17,10 @@ zh_seeds = ['猫', '薄一波', '路飞', '铁树', '梅花', '阿卡迪亚的�
 
 wiki_en_seeds = ['Cat', 'Apple', 'Wiki', 'Culture', 'Art', 'Film', 'Portal:Contents']
 
+file =open("seeds.txt","r",encoding="utf-8") #这里读取种子文件，种子文件来自于百度百科 2012 dump
+
+for line in file:
+	zh_seeds.append(line.strip())
 for i in wiki_en_seeds:
     common_con.lpush(wiki_en_task_queue, 'https://en.wikipedia.org/wiki/{}'.format(i))
 
