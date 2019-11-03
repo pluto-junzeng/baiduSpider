@@ -22,12 +22,12 @@
 - 多机，配置好redid 和mysql 服务器，多次运行`python start_spiders.py`
 ### 常见问题
 - 理论上来说，只要你给的种子够全面，你就可以尽可能的抓取到更多的词条信息 
-[种子链接](https://pan.baidu.com/s/1vgKk294oFuPAMZ71Qj6Ovg ) 提取码：iagw  来源于 百度百科 2012 dump
+- [种子链接](https://pan.baidu.com/s/1vgKk294oFuPAMZ71Qj6Ovg ) 提取码：iagw  来源于 百度百科 2012 dump
 
 ### 已知BUG
 - 多进程爬取下，Redis 的内存会溢出（64G），目前改为 1.5T内存尚未遇到BUG，运行三个小时，已使用内存高达38G
 
-![redis监控](https://github.com/zengjunjun/baiduSpider/blob/master/TIM%E6%88%AA%E5%9B%BE20191103145210.png)
+![redis监控](https://upload-images.jianshu.io/upload_images/4352104-bbea548bc9f9e38f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 一些闲话
 - 大家要是感兴趣，请动动你们勤劳的小手儿给我点个💗💗吧！非常感谢~
